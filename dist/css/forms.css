@@ -1,7 +1,7 @@
 :root {
   --primary-col:linear-gradient(to bottom, #4fc5fa 0%,#0f75f5 100%);
   --primary-col-ac:#0f75f5;
-  --bg-color-input:#fff;
+  --bg-color-input:#583e3e;
 
   --p-checkbox-gradient: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
   --p-checkbox-border: rgba(0, 0, 0, 0.2);
@@ -340,7 +340,7 @@ textarea.p-form-text {
 }
 
 .p-form-switch {
-  --width: 80px;
+  --width: 54px;
   cursor: pointer;
   display: inline-block;
 }
@@ -350,15 +350,16 @@ textarea.p-form-text {
 }
 
 .p-form-switch > input:checked + span {
-  background: #60c35b;
+  background: #478CF6;
 }
 
 .p-form-switch > span {
-  background: #e0e0e0;
-  border: 1px solid #d3d3d3;
+  background: rgba(0,0,0,9%);
+  box-shadow: inset 0 0 2.5px rgba(0, 0, 0, 12.5%),
+              inset 0 1px 10px rgba(0, 0, 0, 6.125%);
   border-radius: 500px;
   display: block;
-  height: calc(var(--width) / 1.6);
+  height: calc(var(--width) / (26/15));
   position: relative;
   transition: all 0.2s;
   width: var(--width);
@@ -367,16 +368,15 @@ textarea.p-form-text {
 .p-form-switch > span::after {
   background: #f9f9f9;
   border-radius: 50%;
-  border: 0.5px solid rgba(0, 0, 0, 0.101987);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.16), 0px 3px 8px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 25%);
   content: "";
-  height: 84%;
-  left: 3%;
+  height: 85%;
+  left: 4%;
   position: absolute;
-  top: 6.5%;
+  top: 7.5%;
   transition: all 0.2s;
-  width: 52.5%;
+  width: 50%;
 }
 
 .p-form-switch > input {
